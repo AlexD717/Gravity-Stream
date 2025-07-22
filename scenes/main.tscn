@@ -1,11 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://r0d73ia1wjwa"]
+[gd_scene load_steps=3 format=3 uid="uid://r0d73ia1wjwa"]
 
 [ext_resource type="PackedScene" uid="uid://xxx0mvchsdks" path="res://scenes/Player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://bfmkt7tsci07a" path="res://scenes/platform.tscn" id="2_0wfyh"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(14, -158)
+position = Vector2(0, -98.94)
+scale = Vector2(1.44, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_o5qli")]
 position = Vector2(2, -76)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(8, 171)
+scale = Vector2(7.92055, -0.187739)
